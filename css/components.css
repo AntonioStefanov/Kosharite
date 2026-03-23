@@ -597,8 +597,9 @@
 }
 
 .footer-grid {
-  grid-template-columns: 1.1fr 0.7fr 0.8fr;
-  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-grid h4 {
@@ -610,6 +611,10 @@
 .footer-grid p {
   display: block;
   margin-bottom: 8px;
+}
+
+.footer-brand-wrapper{
+
 }
 
 .footer-brand {
@@ -632,8 +637,9 @@
 
 .footer-bottom-links {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  gap: 16px;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .footer-bottom-links a,
