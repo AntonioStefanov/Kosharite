@@ -201,6 +201,18 @@
   font-weight: 700;
 }
 
+.icon {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon svg {
+  width: clamp(56px, 6vw, 96px);
+  height: auto;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -406,6 +418,12 @@
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.intro-grid article h2{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 .feature-section,
 .cards-section,
 .events-section,
@@ -596,4 +614,40 @@
 
 .footer-brand {
   margin-bottom: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 20px;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.75rem;
+  color: rgba(240, 236, 228, 0.35);
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom-links a,
+.footer-cookies-link {
+  font-size: 0.75rem;
+  color: rgba(240, 236, 228, 0.35);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover,
+.footer-cookies-link:hover {
+  color: var(--gold-soft);
 }
