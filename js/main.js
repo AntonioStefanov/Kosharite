@@ -137,7 +137,7 @@ const customIcon = L.divIcon({
   className: 'custom-pin',
   html: `
     <div class="pin-wrapper">
-      <img src="/assets/icons/map-marker.png" class="pin-icon">
+      <img src="assets/icons/map-marker.png" class="pin-icon" alt="">
       <div class="pin-tip"></div>
     </div>
   `,

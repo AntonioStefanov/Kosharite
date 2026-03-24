@@ -67,6 +67,256 @@
   }
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <link rel="preload" as="image" href="assets/images/Vhod.jpg" fetchpriority="high">
+
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  </noscript>
+
+  <link rel="preload" as="style" href="css/base.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="css/components.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="css/responsive.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="css/cookies.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cookies.css">
+  </noscript>
+
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --bg-soft: #121212;
+      --panel: #171717;
+      --panel-2: #1e1e1e;
+      --text: #f5f0e8;
+      --muted: rgba(245, 240, 232, .82);
+      --line: rgba(255, 255, 255, .08);
+      --gold: #c8a36a;
+      --gold-soft: #e8c48f;
+      --white: #fff;
+      --shadow: 0 30px 80px rgba(0, 0, 0, .35);
+      --radius: 24px;
+      --radius-sm: 16px;
+      --container: min(1180px, calc(100% - 40px))
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: radial-gradient(circle at top, rgba(200, 163, 106, .12), transparent 30%), linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
+      color: var(--text)
+    }
+
+    .container {
+      width: var(--container);
+      margin: 0 auto
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      letter-spacing: .01em;
+      margin: 0 0 16px
+    }
+
+    h1 {
+      font-size: clamp(3.4rem, 8vw, 6.5rem);
+      line-height: .93;
+      max-width: 980px
+    }
+
+    h2 {
+      font-size: clamp(2.2rem, 4vw, 4.2rem);
+      line-height: 1
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 1rem
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    .page-shell {
+      min-height: 100vh
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(180deg, rgba(4, 4, 4, .88), rgba(4, 4, 4, .28));
+      border-bottom: 1px solid rgba(255, 255, 255, .05)
+    }
+
+    .header-inner {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px
+    }
+
+    .brand-mark,
+    .brand-name {
+      display: inline-flex;
+      flex-direction: column
+    }
+
+    .brand-name {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 2rem;
+      letter-spacing: .18em;
+      color: var(--white)
+    }
+
+    .brand-eyebrow,
+    .section-kicker,
+    .intro-label {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .24em;
+      font-size: .75rem;
+      color: var(--gold-soft)
+    }
+
+    .nav-menu,
+    .header-actions,
+    .hero-actions,
+    .inline-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px
+    }
+
+    .nav-menu {
+      flex: 1 0 auto;
+      justify-content: center
+    }
+
+    .nav-menu a {
+      color: rgba(255, 255, 255, .82);
+      font-size: 1rem
+    }
+
+    .nav-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: rgba(255, 255, 255, .82);
+      font-size: 28px;
+      cursor: pointer
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      transition: transform .25s ease, border-color .25s ease, background .25s ease
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold) 0%, #a3773e 100%);
+      color: #120d08;
+      box-shadow: 0 12px 36px rgba(200, 163, 106, .28)
+    }
+
+    .btn-secondary,
+    .btn-outline,
+    .btn-ghost {
+      border-color: rgba(255, 255, 255, .12);
+      background: rgba(255, 255, 255, .02);
+      color: var(--white)
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: clip
+    }
+
+    .hero-backdrop {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(120deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .55)), radial-gradient(circle at 70% 30%, rgba(200, 163, 106, .22), transparent 18%), url("assets/images/Vhod.jpg");
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.05)
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(5, 5, 5, .4) 0%, rgba(5, 5, 5, .72) 72%, #0b0b0b 100%)
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding-top: 140px;
+      padding-bottom: 84px
+    }
+
+    section {
+      position: relative
+    }
+
+    .btn-outline-icon {
+      font-size: large;
+      font-weight: 400;
+      color: var(--gold);
+      padding-right: .25em
+    }
+
+    .btn-outline-text {
+      font-weight: 400;
+      white-space: nowrap
+    }
+
+    .btn-outline {
+      justify-content: start
+    }
+  </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YFD1LV33P3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -76,23 +326,21 @@
     gtag('config', 'G-YFD1LV33P3');
   </script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  </noscript>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/icons/android-chrome-192x192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
-  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/assets/icons/android-chrome-192x192.png" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="css/cookies.css" />
+  <link rel="preload" as="style" href="https://unpkg.com/leaflet/dist/leaflet.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  </noscript>
 </head>
 
 <body>
@@ -140,8 +388,8 @@
         <div class="container hero-content">
           <h1>Ресторант Кошарите</h1>
           <p class="hero-copy">
-            Ресторант „Кошарите“ е вашето кътче за срещи и вкусна храна в парк „Кайлъка“, Плевен. 
-            Предлагаме българска национална кухня — различни видове меса изпечени на дървени въглища, свежи салати и 
+            Ресторант „Кошарите" е вашето кътче за срещи и вкусна храна в парк „Кайлъка", Плевен.
+            Предлагаме българска национална кухня — различни видове меса изпечени на дървени въглища, свежи салати и
             готвени национални ястия. Заповядайте за вечеря сред природата, за семеен празник или корпоративно събитие.
           </p>
           <div class="hero-actions">
@@ -170,7 +418,7 @@
           <article>
             <h2>Природа</h2>
             <div class="icon">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
                 <path
                   d="M32 12C25 12 20 17 20 23C20 25.8 21.1 28.2 23 30C19.9 31.7 18 34.8 18 38C18 43.5 22.7 48 28.5 48H35.5C41.3 48 46 43.5 46 38C46 34.8 44.1 31.7 41 30C42.9 28.2 44 25.8 44 23C44 17 39 12 32 12Z"
                   stroke="#c8a36a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
@@ -182,26 +430,26 @@
                 <path d="M27 54H37" stroke="#c8a36a" stroke-width="1.6" stroke-linecap="round" />
               </svg>
             </div>
-            <p>Разположен между реката и скалата, сред много зеленина, ресторант „Кошарите“ се намира в едно от 
-              най-красивите кътчета на парк „Кайлъка“, Плевен.</p>
+            <p>Разположен между реката и скалата, сред много зеленина, ресторант „Кошарите" се намира в едно от
+              най-красивите кътчета на парк „Кайлъка", Плевен.</p>
           </article>
           <article>
             <h2>Кухня</h2>
             <div class="icon">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
                 <path d="M18 12V26M22 12V26M26 12V26" stroke="#c8a36a" stroke-width="1.5" stroke-linecap="round" />
                 <path d="M22 26V54" stroke="#c8a36a" stroke-width="1.5" stroke-linecap="round" />
                 <path d="M36 12L36 54M36 12 C33 13, 25 25, 36 34" stroke="#c8a36a" stroke-width="1.5"
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <p>Насладете се на уникалния аромат от изпечени меса на жар и вкусът на български национални ястия и 
+            <p>Насладете се на уникалния аромат от изпечени меса на жар и вкусът на български национални ястия и
               свежи салати с прясно българско сирене.</p>
           </article>
           <article>
             <h2>Събития</h2>
             <div class="icon">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
                 <rect x="14" y="18" width="36" height="36" rx="4" stroke="#c8a36a" stroke-width="1.5" />
                 <path d="M14 26H50" stroke="#c8a36a" stroke-width="1.5" />
                 <path d="M22 14V22M42 14V22" stroke="#c8a36a" stroke-width="1.5" />
@@ -223,11 +471,15 @@
             <p class="section-kicker">За нас</p>
             <h2 id="concept-heading">Традиция, вкус и природа в сърцето на Кайлъка.</h2>
             <p>
-              Сгушен сред красивата природа на защитена местност „Кайлъка“, ресторант „Кошарите“ предлага спокойна атмосфера и 
-              храна за ценители. Ние вярваме, че добрата храна събира хората, затова подготвяме всяко ястие с внимание към детайла
-              и с любов към българските кулинарни традиции. Менюто ни включва скара на дървени въглища, свежи салати и домашни 
-              специалитети, които превръщат всяко посещение в истинско изживяване. Независимо дали идвате за спокойна вечеря, 
-              празнично събитие или просто за разхлаждаща бира сред природата – при нас ще откриете топло посрещане, 
+              Сгушен сред красивата природа на защитена местност „Кайлъка", ресторант „Кошарите" предлага спокойна
+              атмосфера и
+              храна за ценители. Ние вярваме, че добрата храна събира хората, затова подготвяме всяко ястие с внимание
+              към детайла
+              и с любов към българските кулинарни традиции. Менюто ни включва скара на дървени въглища, свежи салати и
+              домашни
+              специалитети, които превръщат всяко посещение в истинско изживяване. Независимо дали идвате за спокойна
+              вечеря,
+              празнично събитие или просто за разхлаждаща бира сред природата – при нас ще откриете топло посрещане,
               уютна атмосфера и вкус, който се помни.
             </p>
           </div>
@@ -264,7 +516,7 @@
             </article>
           </div>
           <div class="btn-menu">
-            <a class="btn btn-primary" href="/assets/pdfs/Меню_Кошарите.pdf">Виж нашето меню</a>
+            <a class="btn btn-primary" href="assets/pdfs/Меню_Кошарите.pdf">Виж нашето меню</a>
           </div>
         </div>
       </section>
@@ -304,53 +556,53 @@
           <div class="gallery-grid">
             <button class="gallery-item" data-full="assets/images/Goren_naves_1.jpg"
               aria-label="Горен навес — изглед 1">
-              <img src="assets/images/Goren_naves_1.jpg" alt="Горен навес на ресторант Кошарите" loading="lazy"
-                decoding="async" width="600" height="400">
+              <img src="assets/images/Goren_naves_1.jpg" alt="Горен навес на ресторант Кошарите" width="600"
+                height="400" loading="lazy" decoding="async">
             </button>
             <button class="gallery-item wide" data-full="assets/images/Goren_naves_3.jpg"
               aria-label="Горен навес — изглед 2">
-              <img src="assets/images/Goren_naves_3.jpg" alt="Широк изглед към горния навес в Кошарите" loading="lazy"
-                decoding="async" width="1200" height="400">
+              <img src="assets/images/Goren_naves_3.jpg" alt="Широк изглед към горния навес в Кошарите" width="1200"
+                height="400" loading="lazy" decoding="async">
             </button>
             <button class="gallery-item tall" data-full="assets/images/Bar.jpg" aria-label="Барът">
-              <img src="assets/images/Bar.jpg" alt="Барът на ресторант Кошарите" loading="lazy" decoding="async"
-                width="600" height="800">
+              <img src="assets/images/Bar.jpg" alt="Барът на ресторант Кошарите" width="600" height="800" loading="lazy"
+                decoding="async">
             </button>
             <button class="gallery-item" data-full="assets/images/Gledka.jpg" aria-label="Изглед към природата">
-              <img src="assets/images/Gledka.jpg" alt="Изглед към природата на парк Кайлъка от Кошарите" loading="lazy"
-                decoding="async" width="600" height="400">
+              <img src="assets/images/Gledka.jpg" alt="Изглед към природата на парк Кайлъка от Кошарите" width="600"
+                height="400" loading="lazy" decoding="async">
             </button>
             <button class="gallery-item" data-full="assets/images/Dancing_0.jpg" aria-label="Жива музика и танци">
-              <img src="assets/images/Dancing_0.jpg" alt="Жива музика и танци в ресторант Кошарите" loading="lazy"
-                decoding="async" width="600" height="400">
+              <img src="assets/images/Dancing_0.jpg" alt="Жива музика и танци в ресторант Кошарите" width="600"
+                height="400" loading="lazy" decoding="async">
             </button>
             <button class="gallery-item tall" data-full="assets/images/Dancing_3.jpg" aria-label="Вечер с жива музика">
-              <img src="assets/images/Dancing_3.jpg" alt="Вечер с жива музика в Кошарите" loading="lazy"
-                decoding="async" width="600" height="800">
+              <img src="assets/images/Dancing_3.jpg" alt="Вечер с жива музика в Кошарите" width="600" height="800"
+                loading="lazy" decoding="async">
             </button>
             <button class="gallery-item tall" data-full="assets/images/Goren_naves_ukrasa_1.jpg"
               aria-label="Украса на навеса">
               <img src="assets/images/Goren_naves_ukrasa_1.jpg" alt="Декорация на горния навес за събитие в Кошарите"
-                loading="lazy" decoding="async" width="600" height="800">
+                width="600" height="800" loading="lazy" decoding="async">
             </button>
             <button class="gallery-item" data-full="assets/images/Goren_naves_ukrasa_2.jpg"
               aria-label="Украса на навеса 2">
               <img src="assets/images/Goren_naves_ukrasa_2.jpg" alt="Украса и атмосфера в ресторант Кошарите"
-                loading="lazy" decoding="async" width="600" height="400">
+                width="600" height="400" loading="lazy" decoding="async">
             </button>
             <button class="gallery-item" data-full="assets/images/Goren_naves_ukrasa_3.jpg"
               aria-label="Украса на навеса 3">
-              <img src="assets/images/Goren_naves_ukrasa_3.jpg" alt="Празнична украса в Кошарите" loading="lazy"
-                decoding="async" width="600" height="400">
+              <img src="assets/images/Goren_naves_ukrasa_3.jpg" alt="Празнична украса в Кошарите" width="600"
+                height="400" loading="lazy" decoding="async">
             </button>
             <button class="gallery-item" data-full="assets/images/Dancing_4.jpg" aria-label="Танци и музика">
-              <img src="assets/images/Dancing_4.jpg" alt="Танци и забавления в ресторант Кошарите" loading="lazy"
-                decoding="async" width="600" height="400">
+              <img src="assets/images/Dancing_4.jpg" alt="Танци и забавления в ресторант Кошарите" width="600"
+                height="400" loading="lazy" decoding="async">
             </button>
             <button class="gallery-item wide" data-full="assets/images/Dancing_1.jpg"
               aria-label="Жива музика — панорама">
-              <img src="assets/images/Dancing_1.jpg" alt="Панорама на вечерта с жива музика в Кошарите" loading="lazy"
-                decoding="async" width="1200" height="400">
+              <img src="assets/images/Dancing_1.jpg" alt="Панорама на вечерта с жива музика в Кошарите" width="1200"
+                height="400" loading="lazy" decoding="async">
             </button>
           </div>
         </div>
@@ -490,7 +742,66 @@
           }
         });
       </script>
-      <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+
+      <!-- ⑫ Leaflet + main.js — зареждат се defer в края на body -->
+      <!-- Leaflet се зарежда мързеливо само когато картата влезе в изгледа -->
+      <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        // Мързеливо зареждане на Leaflet само когато картата е видима
+        (function () {
+          var mapEl = document.getElementById('map');
+          if (!mapEl) return;
+
+          var leafletLoaded = false;
+
+          function loadLeaflet() {
+            if (leafletLoaded) return;
+            leafletLoaded = true;
+
+            var script = document.createElement('script');
+            script.src = 'https://unpkg.com/leaflet/dist/leaflet.js';
+            script.onload = function () {
+              initMap();
+            };
+            document.head.appendChild(script);
+          }
+
+          function initMap() {
+            var customIcon = L.divIcon({
+              className: 'custom-pin',
+              html: `
+                <div class="pin-wrapper">
+                  <img src="assets/icons/map-marker.png" class="pin-icon" alt="">
+                  <div class="pin-tip"></div>
+                </div>`, iconSize: [40, 40],
+              iconAnchor: [20, 40],
+              popupAnchor: [0, -40]
+            });
+
+            var map = L.map('map').setView([43.38284844, 24.63029496], 16);
+            L.tileLayer('https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.jpg?key=D0JSok60mwH7fw0T16Hw', {
+              attribution:
+                '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +
+                '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+            }).addTo(map);
+            L.marker([43.38104844, 24.63135496], { icon: customIcon }).addTo(map);
+          }
+
+          if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+              if (entries[0].isIntersecting) {
+                loadLeaflet();
+                observer.disconnect();
+              }
+            }, { rootMargin: '200px' });
+            observer.observe(mapEl);
+          } else {
+            loadLeaflet();
+          }
+        })();
+      </script>
+
       <script src="js/main.js" defer></script>
   </div>
 </body>
