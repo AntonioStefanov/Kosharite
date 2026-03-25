@@ -137,7 +137,7 @@
   background-image:
     linear-gradient(120deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55)),
     radial-gradient(circle at 70% 30%, rgba(200, 163, 106, 0.22), transparent 18%),
-    url("../assets/images/Vhod.jpg");
+    url("../assets/images/Vhod.webp");
   transform: scale(1.05);
 }
 
@@ -445,7 +445,7 @@
   border-radius: var(--radius);
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.52)),
-    url("../assets/images/Gledka.jpg");
+    url("../assets/images/Gledka.webp");
   position: relative;
   overflow: hidden;
 }
@@ -470,15 +470,15 @@
 }
 
 .card-one .card-media {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35)), url("../assets/images/Salata_2.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35)), url("../assets/images/Salata_2.webp");
 }
 
 .card-two .card-media {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35)), url("../assets/images/Sach.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35)), url("../assets/images/Sach.webp");
 }
 
 .card-three .card-media {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35)), url("../assets/images/Cheesecake.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35)), url("../assets/images/Cheesecake.webp");
 }
 
 .card-body {
