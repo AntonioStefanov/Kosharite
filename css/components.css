@@ -602,50 +602,27 @@
   align-items: center;
 }
 
-.footer-grid h4 {
-  margin-bottom: 12px;
-  font-size: 1.5rem;
-}
-
 .footer-grid a,
 .footer-grid p {
   display: block;
   margin-bottom: 8px;
 }
 
-.footer-brand-wrapper{
-
-}
-
 .footer-brand {
   margin-bottom: 10px;
 }
 
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding-top: 20px;
-}
-
-.footer-bottom-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  font-size: 0.75rem;
-  color: rgba(240, 236, 228, 0.35);
-}
-
-.footer-bottom-links {
+.footer-links {
   display: flex;
   gap: 16px;
   justify-content: flex-end;
   text-align: right;
 }
 
-.footer-bottom-links a,
+.footer-links a,
 .footer-cookies-link {
   font-size: 0.75rem;
-  color: rgba(240, 236, 228, 0.35);
+  color: var(--white);
   background: none;
   border: none;
   cursor: pointer;
@@ -653,7 +630,7 @@
   transition: color 0.2s ease;
 }
 
-.footer-bottom-links a:hover,
+.footer-links a:hover,
 .footer-cookies-link:hover {
-  color: var(--gold-soft);
+  color: var(--gold);
 }

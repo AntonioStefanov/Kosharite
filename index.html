@@ -650,14 +650,6 @@
           <span class="brand-name footer-brand">КОШАРИТЕ</span>
           <p>© <span id="footer-year"></span> Ресторант Кошарите. Всички права запазени.</p>
         </div>
-        <div>
-          <div class="footer-bottom-links">
-            <a href="/privacy-policy.html">Политика за поверителност</a>
-            <a href="#" onclick="CookieConsent.showPreferences(); return false;">
-              Бисквитки
-            </a>
-          </div>
-        </div>
       </div>
 
       <dialog class="lightbox" id="lightbox" aria-modal="true" aria-label="Преглед на снимка от галерията">
@@ -743,12 +735,9 @@
         });
       </script>
 
-      <!-- ⑫ Leaflet + main.js — зареждат се defer в края на body -->
-      <!-- Leaflet се зарежда мързеливо само когато картата влезе в изгледа -->
       <script>
         document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-        // Мързеливо зареждане на Leaflet само когато картата е видима
         (function () {
           var mapEl = document.getElementById('map');
           if (!mapEl) return;
