@@ -69,7 +69,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
   <link rel="preload" as="image" href="assets/images/Vhod.webp" fetchpriority="high">
@@ -94,26 +93,6 @@
   </noscript>
 
   <style>
-    @font-face {
-      font-family: 'Cormorant Garamond';
-      src: local('Georgia');
-      font-weight: 400 700;
-      size-adjust: 98%;
-      ascent-override: 90%;
-      descent-override: 22%;
-      line-gap-override: 0%;
-    }
-
-    @font-face {
-      font-family: 'Inter';
-      src: local('Arial');
-      font-weight: 400 700;
-      size-adjust: 100%;
-      ascent-override: 90%;
-      descent-override: 22%;
-      line-gap-override: 0%;
-    }
-
     :root {
       --bg: #0b0b0b;
       --bg-soft: #121212;
@@ -128,27 +107,27 @@
       --shadow: 0 30px 80px rgba(0, 0, 0, .35);
       --radius: 24px;
       --radius-sm: 16px;
-      --container: min(1180px, calc(100% - 40px))
+      --container: min(1180px, calc(100% - 40px));
     }
 
     * {
-      box-sizing: border-box
+      box-sizing: border-box;
     }
 
     html {
-      scroll-behavior: smooth
+      scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
       font-family: "Inter", Arial, system-ui, sans-serif;
       background: radial-gradient(circle at top, rgba(200, 163, 106, .12), transparent 30%), linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
-      color: var(--text)
+      color: var(--text);
     }
 
     .container {
       width: var(--container);
-      margin: 0 auto
+      margin: 0 auto;
     }
 
     h1,
@@ -158,48 +137,48 @@
       font-family: "Cormorant Garamond", Georgia, serif;
       font-weight: 600;
       letter-spacing: .01em;
-      margin: 0 0 16px
+      margin: 0 0 16px;
     }
 
     h1 {
       font-size: clamp(3.4rem, 8vw, 6.5rem);
       line-height: .93;
-      max-width: 980px
+      max-width: 980px;
     }
 
     h2 {
       font-size: clamp(2.2rem, 4vw, 4.2rem);
-      line-height: 1
+      line-height: 1;
     }
 
     p {
       margin: 0;
       color: var(--muted);
       line-height: 1.75;
-      font-size: 1rem
+      font-size: 1rem;
     }
 
     a {
       color: inherit;
-      text-decoration: none
+      text-decoration: none;
     }
 
     img {
       max-width: 100%;
-      display: block
+      display: block;
     }
 
     .page-shell {
-      min-height: 100vh
+      min-height: 100vh;
     }
 
     .site-header {
       position: fixed;
       inset: 0 0 auto 0;
       z-index: 50;
-      backdrop-filter: blur(16px);
+      backdrop-filter: blur(8px);
       background: linear-gradient(180deg, rgba(4, 4, 4, .88), rgba(4, 4, 4, .28));
-      border-bottom: 1px solid rgba(255, 255, 255, .05)
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
     }
 
     .header-inner {
@@ -207,20 +186,20 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 28px
+      gap: 28px;
     }
 
     .brand-mark,
     .brand-name {
       display: inline-flex;
-      flex-direction: column
+      flex-direction: column;
     }
 
     .brand-name {
       font-family: "Cormorant Garamond", Georgia, serif;
       font-size: 2rem;
       letter-spacing: .18em;
-      color: var(--white)
+      color: var(--white);
     }
 
     .brand-eyebrow,
@@ -230,7 +209,7 @@
       text-transform: uppercase;
       letter-spacing: .24em;
       font-size: .75rem;
-      color: var(--gold-soft)
+      color: var(--gold-soft);
     }
 
     .nav-menu,
@@ -239,17 +218,17 @@
     .inline-actions {
       display: flex;
       align-items: center;
-      gap: 20px
+      gap: 20px;
     }
 
     .nav-menu {
       flex: 1 0 auto;
-      justify-content: center
+      justify-content: center;
     }
 
     .nav-menu a {
       color: rgba(255, 255, 255, .82);
-      font-size: 1rem
+      font-size: 1rem;
     }
 
     .nav-toggle {
@@ -258,7 +237,7 @@
       background: transparent;
       color: rgba(255, 255, 255, .82);
       font-size: 28px;
-      cursor: pointer
+      cursor: pointer;
     }
 
     .btn {
@@ -270,13 +249,13 @@
       border-radius: 999px;
       border: 1px solid transparent;
       font-weight: 600;
-      transition: transform .25s ease, border-color .25s ease, background .25s ease
+      transition: transform .25s ease, border-color .25s ease, background .25s ease;
     }
 
     .btn-primary {
       background: linear-gradient(135deg, var(--gold) 0%, #a3773e 100%);
       color: #120d08;
-      box-shadow: 0 12px 36px rgba(200, 163, 106, .28)
+      box-shadow: 0 12px 36px rgba(200, 163, 106, .28);
     }
 
     .btn-secondary,
@@ -284,7 +263,7 @@
     .btn-ghost {
       border-color: rgba(255, 255, 255, .12);
       background: rgba(255, 255, 255, .02);
-      color: var(--white)
+      color: var(--white);
     }
 
     .hero {
@@ -292,7 +271,7 @@
       display: flex;
       align-items: center;
       overflow: clip;
-      position: relative
+      position: relative;
     }
 
     .hero-bg-img {
@@ -303,41 +282,43 @@
       object-fit: cover;
       object-position: center;
       transform: scale(1.05);
-      z-index: 0
+      z-index: 0;
+      will-change: transform;
     }
 
     .hero-overlay {
       position: absolute;
       inset: 0;
       z-index: 1;
-      background: linear-gradient(120deg, rgba(0, 0, 0, .45), rgba(0, 0, 0, .65)), radial-gradient(circle at 70% 30%, rgba(200, 163, 106, .18), transparent 18%), linear-gradient(180deg, rgba(5, 5, 5, .3) 0%, rgba(5, 5, 5, .65) 72%, #0b0b0b 100%)
+      background: linear-gradient(120deg, rgba(0, 0, 0, .45), rgba(0, 0, 0, .65)), radial-gradient(circle at 70% 30%, rgba(200, 163, 106, .18), transparent 18%), linear-gradient(180deg, rgba(5, 5, 5, .3) 0%, rgba(5, 5, 5, .65) 72%, #0b0b0b 100%);
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
       padding-top: 140px;
-      padding-bottom: 84px
+      padding-bottom: 84px;
     }
+
 
     .btn-outline-icon {
       font-size: large;
       font-weight: 400;
       color: var(--gold);
-      padding-right: .25em
+      padding-right: .25em;
     }
 
     .btn-outline-text {
       font-weight: 400;
-      white-space: nowrap
+      white-space: nowrap;
     }
 
     .btn-outline {
-      justify-content: start
+      justify-content: start;
     }
 
     section {
-      position: relative
+      position: relative;
     }
 
     .hero-meta {
@@ -345,7 +326,7 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
-      min-height: 88px
+      min-height: 88px;
     }
 
     .hero-box {
@@ -353,7 +334,7 @@
       border-radius: var(--radius-sm);
       background: rgba(255, 255, 255, .04);
       border: 1px solid var(--line);
-      box-shadow: var(--shadow)
+      box-shadow: var(--shadow);
     }
 
     .hero-meta span {
@@ -362,38 +343,38 @@
       font-size: .78rem;
       text-transform: uppercase;
       letter-spacing: .2em;
-      color: var(--gold-soft)
+      color: var(--gold-soft);
     }
 
     .hero-meta strong {
       font-size: 1rem;
-      line-height: 1.5
+      line-height: 1.5;
     }
 
     .hero-copy {
       max-width: 720px;
       margin-bottom: 32px;
-      font-size: 1.08rem
+      font-size: 1.08rem;
     }
 
     @media (max-width: 768px) {
       .header-inner {
         min-height: 68px;
         padding: 0 20px;
-        gap: 12px
+        gap: 12px;
       }
 
       .brand-name {
         font-size: 1.5rem;
-        letter-spacing: .12em
+        letter-spacing: .12em;
       }
 
       .brand-mark {
-        flex: 1
+        flex: 1;
       }
 
       .nav-menu {
-        display: none
+        display: none;
       }
 
       .nav-toggle {
@@ -404,78 +385,62 @@
         height: 40px;
         border-radius: 8px;
         font-size: 22px;
-        flex-shrink: 0
+        flex-shrink: 0;
       }
 
       .btn-outline {
         min-width: 44px;
         min-height: 44px;
         padding: 0 12px;
-        flex-shrink: 0
+        flex-shrink: 0;
       }
 
       .btn-outline-text {
-        display: none
+        display: none;
       }
 
       .btn-outline-icon {
         margin: 0;
         padding: 0;
-        font-size: 1.1rem
+        font-size: 1.1rem;
       }
 
       .hero-content {
         padding-top: 110px;
-        padding-bottom: 56px
+        padding-bottom: 56px;
       }
 
       h1 {
         font-size: clamp(2.4rem, 10vw, 3.8rem);
         line-height: 1;
-        margin-bottom: 20px
+        margin-bottom: 20px;
       }
 
       .hero-copy {
         font-size: .97rem;
-        margin-bottom: 24px
+        margin-bottom: 24px;
       }
 
       .hero-actions {
         flex-direction: column;
         align-items: stretch;
-        gap: 12px
+        gap: 12px;
       }
 
       .hero-actions .btn {
         width: 100%;
         min-height: 54px;
         font-size: 1rem;
-        justify-content: center
+        justify-content: center;
       }
 
       .hero-meta {
         grid-template-columns: 1fr;
         gap: 12px;
         margin-top: 40px;
-        min-height: auto
-      }
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: clamp(2rem, 11vw, 2.8rem)
+        min-height: auto;
       }
 
-      .hero-content {
-        padding-top: 96px
-      }
-
-      .brand-name {
-        font-size: 1.3rem
-      }
-    }
-
-    @media (max-width: 768px) {
       .nav-menu.active {
         display: flex;
         flex-direction: column;
@@ -490,7 +455,7 @@
         background: rgba(4, 4, 4, .96);
         border-top: 1px solid rgba(255, 255, 255, .08);
         border-bottom: 1px solid rgba(255, 255, 255, .08);
-        z-index: 100
+        z-index: 100;
       }
 
       .nav-menu.active a {
@@ -498,22 +463,51 @@
         color: rgba(255, 255, 255, .82);
         font-size: 1rem;
         padding: 14px 24px;
-        border-bottom: 1px solid rgba(255, 255, 255, .05)
+        border-bottom: 1px solid rgba(255, 255, 255, .05);
       }
 
       .nav-menu.active a:last-child {
-        border-bottom: none
+        border-bottom: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: clamp(2rem, 11vw, 2.8rem);
+      }
+
+      .hero-content {
+        padding-top: 96px;
+      }
+
+      .brand-name {
+        font-size: 1.3rem;
       }
     }
   </style>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YFD1LV33P3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
-    gtag('consent', 'default', { analytics_storage: 'denied' });
-    gtag('js', new Date());
-    gtag('config', 'G-YFD1LV33P3');
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied'
+    });
+
+    let gtagLoaded = false;
+
+    function loadGtag() {
+      if (gtagLoaded) return;
+      gtagLoaded = true;
+
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YFD1LV33P3';
+      document.head.appendChild(s);
+
+      gtag('js', new Date());
+      gtag('config', 'G-YFD1LV33P3');
+    }
   </script>
 
   <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
@@ -706,7 +700,7 @@
             </article>
           </div>
           <div class="btn-menu">
-            <a class="btn btn-primary" href="assets/pdfs/Меню_Кошарите.pdf">Виж нашето меню</a>
+            <a class="btn btn-primary" href="assets/menu/Меню_Кошарите.pdf">Виж нашето меню</a>
           </div>
         </div>
       </section>
@@ -716,19 +710,20 @@
           <p class="section-kicker">Семейни и корпоративни празненства</p>
           <h2 id="events-heading">Пространство за вашите специални поводи в Плевен</h2>
           <div class="card-grid">
-            <article class="showcase-card card-one">
+            <article class="showcase-card card-four">
+              <!--<div class="card-media" role="img" aria-label="Свежа салата от ресторант Кошарите"></div>-->
               <div class="card-body">
                 <h3>Лични празници</h3>
                 <p>Рожден ден, сватба или кръщене — Кошарите е идеалното място за вашия специален празник в Плевен.</p>
               </div>
             </article>
-            <article class="showcase-card card-two">
+            <article class="showcase-card card-five">
               <div class="card-body">
                 <h3>Фирмени събития</h3>
                 <p>Организирайте вашето фирмено събитие, коктейл или тийм вечеря сред природата на Кайлъка.</p>
               </div>
             </article>
-            <article class="showcase-card card-three">
+            <article class="showcase-card card-six">
               <div class="card-body">
                 <h3>Простор и комфорт</h3>
                 <p>Просторна обстановка, позволяваща да посрещнем голям брой гости, без да се губи усещането за уют и
@@ -919,6 +914,7 @@
           },
           onConsent: function () {
             if (CookieConsent.acceptedCategory('analytics')) {
+              loadGtag();
               gtag('consent', 'update', { analytics_storage: 'granted' });
             }
           }
