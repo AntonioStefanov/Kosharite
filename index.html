@@ -125,7 +125,7 @@
   <link rel="icon" href="assets/icons/android-chrome-192x192.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
-  <link rel="preload" as="style" href="https://unpkg.com/leaflet/dist/leaflet.css"
+  <link rel="preload" as="style" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
@@ -177,7 +177,8 @@
 
     <main id="main-content">
       <section class="hero" id="hero" aria-label="Добре дошли в Ресторант Кошарите">
-        <div class="hero-backdrop" role="img" aria-label="Входът на ресторант Кошарите в парк Кайлъка"></div>
+        <img class="hero-bg-img" src="assets/images/Vhod.webp" alt="" fetchpriority="high" decoding="async" role="img"
+          aria-label="Входът на ресторант Кошарите в парк Кайлъка">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
           <h1>Ресторант Кошарите</h1>
@@ -251,7 +252,7 @@
                   stroke-width="1.5" fill="none" />
               </svg>
             </div>
-            <p>Търсите място за вашето събите в Плевен? Ресторант Кошарите е чудесен избор за рождени дни, сватби,
+            <p>Търсите място за вашето събитие в Плевен? Ресторант Кошарите е чудесен избор за рождени дни, сватби,
               кръщенета,
               фирмени партита или просто да хапнете с любими хора.</p>
           </article>
@@ -478,7 +479,7 @@
       </svg>
       Затвори
     </button>
-    <div class="lb-counter" id="lb-counter" role="tablist" aria-label="Навигация между снимките"></div>
+    <div class="lb-counter" id="lb-counter" role="group" aria-label="Навигация между снимките"></div>
   </dialog>
 
   <button class="btn-cookies-float" onclick="CookieConsent.showPreferences()" aria-label="Настройки за бисквитки">
@@ -594,7 +595,7 @@
     })();
   </script>
 
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
