@@ -1,39 +1,39 @@
 #cc-main {
-  --cc-font-family: 'Inter', system-ui, sans-serif;
+  --cc-font-family: "Inter", system-ui, sans-serif;
   --cc-modal-border-radius: 16px;
   --cc-btn-border-radius: 999px;
   --cc-toggle-border-radius: 999px;
-  --cc-bg:               #141210;
-  --cc-secondary-color:  #1e1b17;
-  --cc-separator-color:  rgba(255, 255, 255, 0.07);
+  --cc-bg: #141210;
+  --cc-secondary-color: #1e1b17;
+  --cc-separator-color: rgba(255, 255, 255, 0.07);
   --cc-cookie-category-block-bg: #1e1b17;
   --cc-cookie-category-block-bg-hover: #252118;
-  --cc-primary-color:    #f0ece4;
-  --cc-secondary-color:  rgba(240, 236, 228, 0.6);
-  --cc-btn-primary-bg:          #c8a36a;
-  --cc-btn-primary-color:       #120d08;
-  --cc-btn-primary-hover-bg:    #a3773e;
+  --cc-primary-color: #f0ece4;
+  --cc-secondary-color: rgba(240, 236, 228, 0.6);
+  --cc-btn-primary-bg: #c8a36a;
+  --cc-btn-primary-color: #120d08;
+  --cc-btn-primary-hover-bg: #a3773e;
   --cc-btn-primary-hover-color: #120d08;
-  --cc-btn-primary-border-color:     transparent;
+  --cc-btn-primary-border-color: transparent;
   --cc-btn-primary-hover-border-color: transparent;
-  --cc-btn-secondary-bg:             rgba(255, 255, 255, 0.04);
-  --cc-btn-secondary-color:          #f0ece4;
-  --cc-btn-secondary-hover-bg:       rgba(255, 255, 255, 0.09);
-  --cc-btn-secondary-hover-color:    #f0ece4;
-  --cc-btn-secondary-border-color:   rgba(255, 255, 255, 0.12);
+  --cc-btn-secondary-bg: rgba(255, 255, 255, 0.04);
+  --cc-btn-secondary-color: #f0ece4;
+  --cc-btn-secondary-hover-bg: rgba(255, 255, 255, 0.09);
+  --cc-btn-secondary-hover-color: #f0ece4;
+  --cc-btn-secondary-border-color: rgba(255, 255, 255, 0.12);
   --cc-btn-secondary-hover-border-color: rgba(255, 255, 255, 0.22);
-  --cc-toggle-on-bg:        #c8a36a;
-  --cc-toggle-off-bg:       rgba(255, 255, 255, 0.15);
-  --cc-toggle-on-knob-bg:   #120d08;
-  --cc-toggle-off-knob-bg:  #f0ece4;
-  --cc-toggle-readonly-bg:  rgba(255, 255, 255, 0.08);
+  --cc-toggle-on-bg: #c8a36a;
+  --cc-toggle-off-bg: rgba(255, 255, 255, 0.15);
+  --cc-toggle-on-knob-bg: #120d08;
+  --cc-toggle-off-knob-bg: #f0ece4;
+  --cc-toggle-readonly-bg: rgba(255, 255, 255, 0.08);
   --cc-overlay-bg: rgba(6, 5, 4, 0.82);
   --cc-focus-outline-color: rgba(200, 163, 106, 0.5);
 }
 
 #cc-main .cm__title,
 #cc-main .pm__title {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -51,7 +51,7 @@
 }
 
 #cc-main .pm__section-title {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.05rem;
   letter-spacing: 0.04em;
 }
@@ -64,4 +64,3 @@
   background: rgba(255, 255, 255, 0.09) !important;
   color: #f0ece4 !important;
 }
-

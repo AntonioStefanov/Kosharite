@@ -75,8 +75,8 @@ a:hover {
   gap: 2px;
 }
 
-.brand:hover{
-    text-decoration: none;
+.brand:hover {
+  text-decoration: none;
 }
 
 .brand-eyebrow {
@@ -303,7 +303,7 @@ a:hover {
 }
 
 .doc-section ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 15px;
@@ -414,7 +414,9 @@ a:hover {
   font-weight: 600;
   font-family: "Inter", sans-serif;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
 }
 
 .btn-settings:hover {

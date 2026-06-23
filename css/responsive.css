@@ -1,5 +1,4 @@
 @media (max-width: 1080px) {
-
   .split-layout,
   .footer-grid,
   .card-grid,
@@ -91,7 +90,9 @@
     font-size: 1rem;
     padding: 14px 24px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    transition: color 0.2s ease, background 0.2s ease;
+    transition:
+      color 0.2s ease,
+      background 0.2s ease;
   }
 
   .nav-menu.active a:last-child {
@@ -137,9 +138,14 @@
     padding-bottom: 56px;
   }
 
+  .hero-backdrop {
+    transform: none;
+    object-position: center top;
+  }
+
   h1 {
     font-size: clamp(2.4rem, 10vw, 3.8rem);
-    line-height: 1.0;
+    line-height: 1;
     margin-bottom: 20px;
   }
 
@@ -181,11 +187,11 @@
 
   .intro-grid article {
     padding: 24px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .feature-section,
-  .cards-section,
+  .menu-section,
   .events-section,
   .gallery-section,
   .contact-section {
@@ -297,8 +303,19 @@
     font-size: clamp(2rem, 11vw, 2.8rem);
   }
 
+  .hero {
+    min-height: 92vh;
+    align-items: flex-end;
+  }
+
+  .hero-backdrop {
+    transform: none;
+    object-position: center top;
+  }
+
   .hero-content {
-    padding-top: 96px;
+    padding-top: 92px;
+    padding-bottom: 38px;
   }
 
   .brand-name {

@@ -1,601 +1,1122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0b0b0b" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#0b0b0b" />
+    <title>Ресторант Кошарите | Национална кухня в парк Кайлъка, Плевен</title>
+    <meta
+      name="description"
+      content="Ресторант Кошарите в парк Кайлъка, Плевен. Апетитна скара, свежи салати, традиционна българска кухня и жива музика. Резервации: +359 879 31 01 21."
+    />
+    <link rel="canonical" href="https://kosharite.bg/" />
+    <link rel="alternate" hreflang="bg" href="https://kosharite.bg/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://kosharite.bg/index-en.html"
+    />
 
-  <title>Ресторант Кошарите | Скара и традиционна кухня в парк Кайлъка, Плевен</title>
-  <meta name="description"
-    content="Ресторант Кошарите в парк Кайлъка, Плевен. Апетитна скара, свежи салати, традиционна българска кухня и жива музика. 250 места. Резервации: +359 879 31 01 21." />
-  <meta name="keywords"
-    content="ресторант Плевен, ресторант Кайлъка, Кошарите, скара Плевен, традиционна кухня, жива музика, събития Плевен, резервация маса" />
-  <link rel="canonical" href="https://kosharite.bg/" />
-  <link rel="alternate" hreflang="bg" href="https://kosharite.bg/" />
-  <link rel="alternate" hreflang="en" href="https://kosharite.bg/index-en.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ресторант Кошарите" />
+    <meta
+      property="og:title"
+      content="Ресторант Кошарите | Традиционна кухня в парк Кайлъка, Плевен"
+    />
+    <meta
+      property="og:description"
+      content="Апетитна скара, свежи салати и жива музика сред природата на парк Кайлъка. Резервирайте маса сега."
+    />
+    <meta
+      property="og:image"
+      content="https://kosharite.bg/assets/images/Vhod.webp"
+    />
+    <meta property="og:url" content="https://kosharite.bg/" />
+    <meta property="og:locale" content="bg_BG" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Ресторант Кошарите" />
-  <meta property="og:title" content="Ресторант Кошарите | Скара и традиционна кухня в парк Кайлъка, Плевен" />
-  <meta property="og:description"
-    content="Апетитна скара, свежи салати и жива музика сред природата на парк Кайлъка. Резервирайте маса сега." />
-  <meta property="og:image" content="https://kosharite.bg/assets/images/Vhod.webp" />
-  <meta property="og:url" content="https://kosharite.bg/" />
-  <meta property="og:locale" content="bg_BG" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ресторант Кошарите | Плевен" />
+    <meta
+      name="twitter:description"
+      content="Скара, традиционна кухня и жива музика сред природата на парк Кайлъка."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kosharite.bg/assets/images/Vhod.webp"
+    />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ресторант Кошарите | Плевен" />
-  <meta name="twitter:description" content="Скара, традиционна кухня и жива музика сред природата на парк Кайлъка." />
-  <meta name="twitter:image" content="https://kosharite.bg/assets/images/Vhod.webp" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Ресторант Кошарите",
-    "image": "https://kosharite.bg/assets/images/Vhod.webp",
-    "url": "https://kosharite.bg/",
-    "telephone": "+359879310121",
-    "servesCuisine": ["Bulgarian", "Grilled food"],
-    "priceRange": "лв-лвлв",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Парк Кайлъка",
-      "addressLocality": "Плевен",
-      "addressCountry": "BG"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 43.38094844,
-      "longitude": 24.63129496
-    },
-    "openingHoursSpecification": [
+    <script type="application/ld+json">
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "16:00",
-        "closes": "00:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday","Sunday"],
-        "opens": "12:00",
-        "closes": "00:00"
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Ресторант Кошарите",
+        "image": "https://kosharite.bg/assets/images/Vhod.webp",
+        "url": "https://kosharite.bg/",
+        "telephone": "+359879310121",
+        "servesCuisine": ["Bulgarian", "Grilled food"],
+        "priceRange": "15-40 EUR",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Парк Кайлъка",
+          "addressLocality": "Плевен",
+          "addressCountry": "BG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.38094844,
+          "longitude": 24.63129496
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "16:00",
+            "closes": "23:59"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "12:00",
+            "closes": "00:00"
+          }
+        ],
+        "hasMap": "https://maps.google.com/?q=43.38094844,24.63129496",
+        "sameAs": []
       }
-    ],
-    "hasMap": "https://maps.google.com/?q=43.38094844,24.63129496",
-    "sameAs": []
-  }
-  </script>
+    </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
-  <link rel="preload" as="image" href="assets/images/Vhod.webp" fetchpriority="high">
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/Vhod.webp"
+      fetchpriority="high"
+    />
 
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-  </noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
 
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="preload" as="style" href="css/cookies.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="css/cookies.css">
-  </noscript>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="preload"
+      as="style"
+      href="css/cookies.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link rel="stylesheet" href="css/cookies.css" />
+    </noscript>
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-    gtag('consent', 'default', {
-      analytics_storage: 'denied'
-    });
+      gtag("consent", "default", {
+        analytics_storage: "denied",
+      });
 
-    let gtagLoaded = false;
+      let gtagLoaded = false;
 
-    function loadGtag() {
-      if (gtagLoaded) return;
-      gtagLoaded = true;
+      function loadGtag() {
+        if (gtagLoaded) return;
+        gtagLoaded = true;
 
-      const s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YFD1LV33P3';
-      document.head.appendChild(s);
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-YFD1LV33P3";
+        document.head.appendChild(s);
 
-      gtag('js', new Date());
-      gtag('config', 'G-YFD1LV33P3');
-    }
-  </script>
+        gtag("js", new Date());
+        gtag("config", "G-YFD1LV33P3");
+      }
+    </script>
 
-  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
-  </noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
+      />
+    </noscript>
 
-  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/icons/android-chrome-192x192.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="assets/icons/android-chrome-192x192.png"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
 
-  <link rel="preload" as="style" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-  </noscript>
-</head>
+    <link
+      rel="preload"
+      as="style"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+      />
+    </noscript>
+  </head>
 
-<body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="#hero" class="brand-mark" aria-label="Начало - Ресторант Кошарите">
-          <span class="brand-eyebrow">РЕСТОРАНТ</span>
-          <span class="brand-name">КОШАРИТЕ</span>
-        </a>
-
-        <nav class="nav-menu" aria-label="Основна навигация">
-          <a href="#concept">За нас</a>
-          <a href="#menu">Меню</a>
-          <a href="#events">Събития</a>
-          <a href="#gallery">Галерия</a>
-          <a href="#contact">Контакти</a>
-        </nav>
-
-        <div class="header-actions">
-          <a class="btn btn-outline" href="tel:+359879310121" aria-label="Обади се за резервация: +359 879 31 01 21">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="btn-outline-icon" aria-hidden="true" focusable="false">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-              </path>
-            </svg>
-            <span class="btn-outline-text">+359 879 31 01 21</span>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a
+            href="#hero"
+            class="brand-mark"
+            aria-label="Начало - Ресторант Кошарите"
+          >
+            <span class="brand-eyebrow">РЕСТОРАНТ</span>
+            <span class="brand-name">КОШАРИТЕ</span>
           </a>
 
-          <div class="lang-switch" aria-label="Превключване на езика">
-            <a class="lang-link" href="index-en.html" lang="en" hreflang="en">EN</a>
-          </div>
-        </div>
+          <nav id="nav-menu" class="nav-menu" aria-label="Основна навигация">
+            <a href="#concept">За нас</a>
+            <a href="#menu">Меню</a>
+            <a href="#events">Събития</a>
+            <a href="#gallery">Галерия</a>
+            <a href="#contact">Контакти</a>
+          </nav>
 
-        <div class="nav-toggle-wrapper">
-          <button class="nav-toggle" aria-label="Отвори навигационното меню" aria-expanded="false"
-            aria-controls="nav-menu">
-            ☰
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <section class="hero" id="hero" aria-label="Добре дошли в Ресторант Кошарите">
-        <img class="hero-bg-img" src="assets/images/Vhod.webp" alt="" fetchpriority="high" decoding="async" role="img"
-          aria-label="Входът на ресторант Кошарите в парк Кайлъка">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <h1>Ресторант Кошарите</h1>
-          <p class="hero-copy">
-            Ресторант „Кошарите" е вашето кътче за срещи и вкусна храна в парк „Кайлъка", Плевен.
-            Предлагаме българска национална кухня — различни видове меса изпечени на дървени въглища, свежи салати и
-            готвени национални ястия. Заповядайте за вечеря сред природата, за семеен празник или корпоративно събитие.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+359879310121">Направи резервация</a>
-            <a class="btn btn-secondary" href="#menu">Разгледай менюто</a>
-          </div>
-          <div class="hero-meta">
-            <div class="hero-box">
-              <span>Локация</span>
-              <strong>Плевен, парк „Кайлъка"</strong>
-            </div>
-            <div class="hero-box">
-              <span>Работно време</span>
-              <strong>Понеделник – Петък: 16:00 – 00:00<br>Събота – Неделя: 12:00 – 00:00</strong>
-            </div>
-            <div class="hero-box">
-              <span>Сезонен обект</span>
-              <strong>От юни до септември</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="intro-strip" aria-label="Накратко за нас">
-        <div class="container intro-grid">
-          <article>
-            <h2>Природа</h2>
-            <div class="icon">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <div class="header-actions">
+            <a
+              class="btn btn-outline"
+              href="tel:+359879310121"
+              aria-label="Обади се за резервация: +359 879 31 01 21"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="btn-outline-icon"
+                aria-hidden="true"
+                focusable="false"
+              >
                 <path
-                  d="M32 12C25 12 20 17 20 23C20 25.8 21.1 28.2 23 30C19.9 31.7 18 34.8 18 38C18 43.5 22.7 48 28.5 48H35.5C41.3 48 46 43.5 46 38C46 34.8 44.1 31.7 41 30C42.9 28.2 44 25.8 44 23C44 17 39 12 32 12Z"
-                  stroke="#c8a36a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M32 34V54" stroke="#c8a36a" stroke-width="1.6" stroke-linecap="round" />
-                <path d="M32 42C30.5 40.8 29.2 39.2 28.4 37.5" stroke="#c8a36a" stroke-width="1.3"
-                  stroke-linecap="round" />
-                <path d="M32 39C33.7 37.8 35.1 36.3 36.1 34.5" stroke="#c8a36a" stroke-width="1.3"
-                  stroke-linecap="round" />
-                <path d="M27 54H37" stroke="#c8a36a" stroke-width="1.6" stroke-linecap="round" />
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
               </svg>
-            </div>
-            <p>Разположен между реката и скалата, сред много зеленина, ресторант „Кошарите" се намира в едно от
-              най-красивите кътчета на парк „Кайлъка", Плевен.</p>
-          </article>
-          <article>
-            <h2>Кухня</h2>
-            <div class="icon">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-                <path d="M18 12V26M22 12V26M26 12V26" stroke="#c8a36a" stroke-width="1.5" stroke-linecap="round" />
-                <path d="M22 26V54" stroke="#c8a36a" stroke-width="1.5" stroke-linecap="round" />
-                <path d="M36 12L36 54M36 12 C33 13, 25 25, 36 34" stroke="#c8a36a" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <p>Насладете се на уникалния аромат от изпечени меса на жар и вкусът на български национални ястия и
-              свежи салати с прясно българско сирене.</p>
-          </article>
-          <article>
-            <h2>Събития</h2>
-            <div class="icon">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-                <rect x="14" y="18" width="36" height="36" rx="4" stroke="#c8a36a" stroke-width="1.5" />
-                <path d="M14 26H50" stroke="#c8a36a" stroke-width="1.5" />
-                <path d="M22 14V22M42 14V22" stroke="#c8a36a" stroke-width="1.5" />
-                <path d="M32 34L34.5 39H40L35.5 42.5L37 48L32 45L27 48L28.5 42.5L24 39H29.5L32 34Z" stroke="#c8a36a"
-                  stroke-width="1.5" fill="none" />
-              </svg>
-            </div>
-            <p>Търсите място за вашето събитие в Плевен? Ресторант Кошарите е чудесен избор за рождени дни, сватби,
-              кръщенета,
-              фирмени партита или просто да хапнете с любими хора.</p>
-          </article>
-        </div>
-      </section>
+              <span class="btn-outline-text">+359 879 31 01 21</span>
+            </a>
 
-      <section class="feature-section" id="concept" aria-labelledby="concept-heading">
-        <div class="container split-layout">
-          <div class="image-panel tall-panel" role="img" aria-label="Изглед към природата от ресторант Кошарите"></div>
-          <div class="text-panel">
-            <p class="section-kicker">За нас</p>
-            <h2 id="concept-heading">Традиция, вкус и природа в сърцето на Кайлъка.</h2>
-            <p>
-              Сгушен сред красивата природа на защитена местност „Кайлъка", ресторант „Кошарите" предлага спокойна
-              атмосфера и
-              храна за ценители. Ние вярваме, че добрата храна събира хората, затова подготвяме всяко ястие с внимание
-              към детайла
-              и с любов към българските кулинарни традиции. Менюто ни включва скара на дървени въглища, свежи салати и
-              домашни
-              специалитети, които превръщат всяко посещение в истинско изживяване. Независимо дали идвате за спокойна
-              вечеря,
-              празнично събитие или просто за разхлаждаща бира сред природата – при нас ще откриете топло посрещане,
-              уютна атмосфера и вкус, който се помни.
-            </p>
+            <div class="lang-switch" aria-label="Превключване на езика">
+              <a class="lang-link" href="index-en.html" lang="en" hreflang="en"
+                >EN</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-toggle-wrapper">
+            <button
+              class="nav-toggle"
+              aria-label="Отвори навигационното меню"
+              aria-expanded="false"
+              aria-controls="nav-menu"
+            >
+              ☰
+            </button>
           </div>
         </div>
-      </section>
+      </header>
 
-      <section class="cards-section" id="menu" aria-labelledby="menu-heading">
+      <main id="main-content">
+        <section
+          class="hero"
+          id="hero"
+          aria-label="Добре дошли в Ресторант Кошарите"
+        >
+          <picture class="hero-picture">
+            <img
+              class="hero-backdrop"
+              src="assets/images/Vhod.webp"
+              alt=""
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <h1>Ресторант Кошарите</h1>
+            <p class="hero-copy">
+              Ресторант „Кошарите" е вашето кътче за срещи и вкусна храна в парк
+              „Кайлъка", Плевен. Предлагаме българска национална кухня —
+              различни видове меса изпечени на дървени въглища, свежи салати и
+              готвени национални ястия. Заповядайте за вечеря сред природата, за
+              семеен празник или корпоративно събитие.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+359879310121"
+                >Направи резервация</a
+              >
+              <a class="btn btn-secondary" href="#menu">Разгледай менюто</a>
+            </div>
+            <div class="hero-meta">
+              <div class="hero-box">
+                <span>Локация</span>
+                <strong>Плевен, парк „Кайлъка"</strong>
+              </div>
+              <div class="hero-box">
+                <span>Работно време</span>
+                <strong
+                  >Понеделник – Петък: 16:00 – 00:00<br />Събота – Неделя: 12:00
+                  – 00:00</strong
+                >
+              </div>
+              <div class="hero-box">
+                <span>Сезонен обект</span>
+                <strong>От юни до септември</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="intro-strip" aria-label="Накратко за нас">
+          <div class="container intro-grid">
+            <article>
+              <h2>Природа</h2>
+              <div class="icon">
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M32 12C25 12 20 17 20 23C20 25.8 21.1 28.2 23 30C19.9 31.7 18 34.8 18 38C18 43.5 22.7 48 28.5 48H35.5C41.3 48 46 43.5 46 38C46 34.8 44.1 31.7 41 30C42.9 28.2 44 25.8 44 23C44 17 39 12 32 12Z"
+                    stroke="#c8a36a"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M32 34V54"
+                    stroke="#c8a36a"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M32 42C30.5 40.8 29.2 39.2 28.4 37.5"
+                    stroke="#c8a36a"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M32 39C33.7 37.8 35.1 36.3 36.1 34.5"
+                    stroke="#c8a36a"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M27 54H37"
+                    stroke="#c8a36a"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <p>
+                Разположен между реката и скалата, сред много зеленина,
+                ресторант „Кошарите" се намира в едно от най-красивите кътчета
+                на парк „Кайлъка", Плевен.
+              </p>
+            </article>
+            <article>
+              <h2>Кухня</h2>
+              <div class="icon">
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18 12V26M22 12V26M26 12V26"
+                    stroke="#c8a36a"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M22 26V54"
+                    stroke="#c8a36a"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M36 12L36 54M36 12 C33 13, 25 25, 36 34"
+                    stroke="#c8a36a"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>
+                Насладете се на уникалния аромат от изпечени меса на жар и
+                вкусът на български национални ястия и свежи салати с прясно
+                българско сирене.
+              </p>
+            </article>
+            <article>
+              <h2>Събития</h2>
+              <div class="icon">
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="14"
+                    y="18"
+                    width="36"
+                    height="36"
+                    rx="4"
+                    stroke="#c8a36a"
+                    stroke-width="1.5"
+                  />
+                  <path d="M14 26H50" stroke="#c8a36a" stroke-width="1.5" />
+                  <path
+                    d="M22 14V22M42 14V22"
+                    stroke="#c8a36a"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M32 34L34.5 39H40L35.5 42.5L37 48L32 45L27 48L28.5 42.5L24 39H29.5L32 34Z"
+                    stroke="#c8a36a"
+                    stroke-width="1.5"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <p>
+                Търсите място за вашето събитие в Плевен? Ресторант Кошарите е
+                чудесен избор за рождени дни, сватби, кръщенета, фирмени партита
+                или просто да хапнете с любими хора.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="feature-section"
+          id="concept"
+          aria-labelledby="concept-heading"
+        >
+          <div class="container split-layout">
+            <div
+              class="image-panel tall-panel"
+              role="img"
+              aria-label="Маса със салати в ресторант Кошарите"
+            ></div>
+            <div class="text-panel">
+              <p class="section-kicker">За нас</p>
+              <h2 id="concept-heading">
+                Традиция, вкус и природа в сърцето на Кайлъка.
+              </h2>
+              <p>
+                Сгушен сред красивата природа на защитена местност „Кайлъка",
+                ресторант „Кошарите" предлага спокойна атмосфера и храна за
+                ценители. Ние вярваме, че добрата храна събира хората, затова
+                подготвяме всяко ястие с внимание към детайла и с любов към
+                българските кулинарни традиции. Менюто ни включва скара на
+                дървени въглища, свежи салати и домашни специалитети, които
+                превръщат всяко посещение в истинско изживяване. Независимо дали
+                идвате за спокойна вечеря, празнично събитие или просто за
+                разхлаждаща бира сред природата – при нас ще откриете топло
+                посрещане, уютна атмосфера и вкус, който се помни.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+          <div class="container">
+            <header class="section-heading center">
+              <p class="section-kicker">Меню и акценти</p>
+              <h2 id="menu-heading">Нашето меню</h2>
+            </header>
+            <div class="menu-cover-wrap">
+              <a
+                class="menu-cover-link"
+                href="assets/menu/Menu_Kosharite.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Отвори цялото меню на ресторант Кошарите в нов раздел"
+              >
+                <img
+                  src="assets/images/Menu_cover.webp"
+                  alt="Корица на менюто на ресторант Кошарите"
+                  loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="1131"
+                />
+                <span class="menu-cover-overlay" aria-hidden="true">
+                  <span>Отвори</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="recommendations-section"
+          aria-labelledby="recommendations-heading"
+        >
+          <div class="container">
+            <header class="section-heading center">
+              <h2 id="recommendations-heading">Ние Ви препоръчваме</h2>
+            </header>
+            <div class="card-grid">
+              <article class="showcase-card card-one">
+                <div
+                  class="card-media"
+                  role="img"
+                  aria-label="Влашка салата от ресторант Кошарите"
+                ></div>
+                <div class="card-body">
+                  <h3>Влашка салата</h3>
+                  <p>
+                    Розови домати, прясно изпечени чушки и българско овче
+                    сирене.
+                  </p>
+                </div>
+              </article>
+              <article class="showcase-card card-two">
+                <div
+                  class="card-media"
+                  role="img"
+                  aria-label="Кюфтета, специалитет на скарата в ресторант Кошарите"
+                ></div>
+                <div class="card-body">
+                  <h3>Свински кюфтета</h3>
+                  <p>
+                    Специалитет на ресторант Кошарите – приготвени от домашна
+                    кайма и изпечени на жар.
+                  </p>
+                </div>
+              </article>
+              <article class="showcase-card card-three">
+                <div
+                  class="card-media"
+                  role="img"
+                  aria-label="Домашен чийзкейк от ресторант Кошарите"
+                ></div>
+                <div class="card-body">
+                  <h3>Чийзкейк</h3>
+                  <p>
+                    Домашно приготвен чийзкейк с нежен крем, фин бисквитен блат
+                    и сладко от боровинки.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="events-section"
+          id="events"
+          aria-labelledby="events-heading"
+        >
+          <div class="container">
+            <p class="section-kicker">Семейни и корпоративни празненства</p>
+            <h2 id="events-heading">
+              Пространство за вашите специални поводи в Плевен
+            </h2>
+            <div class="card-grid">
+              <article class="showcase-card card-four">
+                <div
+                  class="card-media"
+                  role="img"
+                  aria-label="Сватбена украса на открито с бяла арка, маса, шампанско, жълти рози, лимони и зеленина."
+                ></div>
+                <div class="card-body">
+                  <h3>Лични празници</h3>
+                  <p>
+                    Рожден ден, сватба или кръщене — Кошарите е идеалното място
+                    за вашия специален празник в Плевен.
+                  </p>
+                </div>
+              </article>
+              <article class="showcase-card card-five">
+                <div
+                  class="card-media"
+                  role="img"
+                  aria-label="Група гости вдигат чаши за наздравица."
+                ></div>
+                <div class="card-body">
+                  <h3>Фирмени събития</h3>
+                  <p>
+                    Организирайте вашето фирмено събитие, коктейл или тийм
+                    вечеря сред природата на Кайлъка.
+                  </p>
+                </div>
+              </article>
+              <article class="showcase-card card-six">
+                <div
+                  class="card-media"
+                  role="img"
+                  aria-label="Гости на тържество танцуват хванати за ръце сред дървета и цветно вечерно осветление."
+                ></div>
+                <div class="card-body">
+                  <h3>Простор и комфорт</h3>
+                  <p>
+                    Просторна обстановка, позволяваща да посрещнем голям брой
+                    гости, без да се губи усещането за уют и спокойствие.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="gallery-section"
+          id="gallery"
+          aria-labelledby="gallery-heading"
+        >
+          <div class="container">
+            <p class="section-kicker">Галерия</p>
+            <h2 id="gallery-heading">Виртуална разходка</h2>
+            <div class="gallery-grid">
+              <button
+                class="gallery-item"
+                data-full="assets/images/Goren_naves_1.webp"
+                aria-label="Горен навес — изглед 1"
+              >
+                <img
+                  src="assets/images/Goren_naves_1.webp"
+                  alt="Горен навес на ресторант Кошарите"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item wide"
+                data-full="assets/images/Goren_naves_3.webp"
+                aria-label="Горен навес — изглед 2"
+              >
+                <img
+                  src="assets/images/Goren_naves_3.webp"
+                  alt="Широк изглед към горния навес в Кошарите"
+                  width="1200"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item tall"
+                data-full="assets/images/Bar.webp"
+                aria-label="Барът"
+              >
+                <img
+                  src="assets/images/Bar.webp"
+                  alt="Барът на ресторант Кошарите"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item"
+                data-full="assets/images/Gledka.webp"
+                aria-label="Изглед към природата"
+              >
+                <img
+                  src="assets/images/Gledka.webp"
+                  alt="Изглед към природата на парк Кайлъка от Кошарите"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item"
+                data-full="assets/images/Dancing_0.webp"
+                aria-label="Жива музика и танци"
+              >
+                <img
+                  src="assets/images/Dancing_0.webp"
+                  alt="Жива музика и танци в ресторант Кошарите"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item tall"
+                data-full="assets/images/Goren_naves_ukrasa_1.webp"
+                aria-label="Украса на навеса"
+              >
+                <img
+                  src="assets/images/Goren_naves_ukrasa_1.webp"
+                  alt="Декорация на горния навес за събитие в Кошарите"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item tall"
+                data-full="assets/images/Dancing_3.webp"
+                aria-label="Вечер с жива музика"
+              >
+                <img
+                  src="assets/images/Dancing_3.webp"
+                  alt="Вечер с жива музика в Кошарите"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item"
+                data-full="assets/images/Goren_naves_ukrasa_2.webp"
+                aria-label="Украса на навеса 2"
+              >
+                <img
+                  src="assets/images/Goren_naves_ukrasa_2.webp"
+                  alt="Украса и атмосфера в ресторант Кошарите"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item"
+                data-full="assets/images/Goren_naves_ukrasa_3.webp"
+                aria-label="Украса на навеса 3"
+              >
+                <img
+                  src="assets/images/Goren_naves_ukrasa_3.webp"
+                  alt="Празнична украса в Кошарите"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item"
+                data-full="assets/images/Dancing_4.webp"
+                aria-label="Танци и музика"
+              >
+                <img
+                  src="assets/images/Dancing_4.webp"
+                  alt="Танци и забавления в ресторант Кошарите"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+              <button
+                class="gallery-item wide"
+                data-full="assets/images/Dancing_1.webp"
+                aria-label="Жива музика — панорама"
+              >
+                <img
+                  src="assets/images/Dancing_1.webp"
+                  alt="Панорама на вечерта с жива музика в Кошарите"
+                  width="1200"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="contact-section"
+          id="contact"
+          aria-labelledby="contact-heading"
+        >
+          <div class="container">
+            <div class="contact-grid">
+              <div>
+                <p class="section-kicker">Локация и контакти</p>
+                <h2 id="contact-heading">Намерете ни лесно</h2>
+                <address class="contact-card">
+                  <p>
+                    <strong>Телефон:</strong>
+                    <a href="tel:+359879310121">+359 879 31 01 21</a>
+                  </p>
+                  <p>
+                    <strong>Адрес:</strong>
+                    <a
+                      href="https://www.google.com/maps/dir/?api=1&destination=43.38094844,24.63129496"
+                      target="_blank"
+                      rel="noopener"
+                      >Плевен, парк „Кайлъка"</a
+                    >
+                  </p>
+                  <p>
+                    <strong>Работно време:</strong><br />
+                    Понеделник – Петък: 16:00 – 00:00<br />
+                    Събота – Неделя: 12:00 – 00:00
+                  </p>
+                  <a
+                    class="btn btn-secondary btn-directions"
+                    href="https://www.google.com/maps/dir/?api=1&destination=43.38094844,24.63129496"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Отвори упътвания до Ресторант Кошарите в Google Maps"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <polygon points="3 11 22 2 13 21 11 13 3 11" />
+                    </svg>
+                    Упътване с Google Maps
+                  </a>
+                </address>
+              </div>
+              <div class="map-wrap">
+                <div
+                  id="map"
+                  role="region"
+                  aria-label="Карта с местоположението на ресторант Кошарите в парк Кайлъка, Плевен"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="reviews-section" aria-labelledby="reviews-heading">
         <div class="container">
           <div class="section-heading center">
-            <p class="section-kicker">Меню и акценти</p>
-            <h2 id="menu-heading">Ние Ви препоръчваме</h2>
+            <p class="section-kicker">Отзиви от гости</p>
+            <h2 id="reviews-heading">Хората говорят за нас</h2>
+            <p class="section-description">
+              Благодарим на всички гости, които споделят своите впечатления.
+              Вашето мнение ни помага да ставаме още по-добри.
+            </p>
           </div>
-          <div class="card-grid">
-            <article class="showcase-card card-one">
-              <div class="card-media" role="img" aria-label="Влашка салата от ресторант Кошарите"></div>
-              <div class="card-body">
-                <h3>Влашка салата</h3>
-                <p>Розови домати, прясно изпечени чушки и българско овче сирене.</p>
-              </div>
-            </article>
-            <article class="showcase-card card-two">
-              <div class="card-media" role="img" aria-label="Кюфтета — специалитет на скарата в Кошарите"></div>
-              <div class="card-body">
-                <h3>Кюфтета</h3>
-                <p>Специалитет на ресторант Кошарите - приготвени от домашна кайма, изпечени на жар.</p>
-              </div>
-            </article>
-            <article class="showcase-card card-three">
-              <div class="card-media" role="img" aria-label="Домашен чийзкейк — десерт от Кошарите"></div>
-              <div class="card-body">
-                <h3>Чийзкейк</h3>
-                <p>Домашно приготвен чийзкейк с нежен крем, фин бисквитен блат и сладко от боровинки.</p>
-              </div>
-            </article>
-          </div>
-          <div class="btn-menu">
-            <a class="btn btn-primary" href="assets/menu/Меню_Кошарите.pdf">Виж цялото меню</a>
-          </div>
-        </div>
-      </section>
 
-      <section class="events-section" id="events" aria-labelledby="events-heading">
-        <div class="container">
-          <p class="section-kicker">Семейни и корпоративни празненства</p>
-          <h2 id="events-heading">Пространство за вашите специални поводи в Плевен</h2>
-          <div class="card-grid">
-            <article class="showcase-card card-four">
-              <!--<div class="card-media" role="img" aria-label="Свежа салата от ресторант Кошарите"></div>-->
-              <div class="card-body">
-                <h3>Лични празници</h3>
-                <p>Рожден ден, сватба или кръщене — Кошарите е идеалното място за вашия специален празник в Плевен.</p>
-              </div>
-            </article>
-            <article class="showcase-card card-five">
-              <div class="card-body">
-                <h3>Фирмени събития</h3>
-                <p>Организирайте вашето фирмено събитие, коктейл или тийм вечеря сред природата на Кайлъка.</p>
-              </div>
-            </article>
-            <article class="showcase-card card-six">
-              <div class="card-body">
-                <h3>Простор и комфорт</h3>
-                <p>Просторна обстановка, позволяваща да посрещнем голям брой гости, без да се губи усещането за уют и
-                  спокойствие.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
-        <div class="container">
-          <p class="section-kicker">Галерия</p>
-          <h2 id="gallery-heading">Виртуална разходка</h2>
-          <div class="gallery-grid">
-            <button class="gallery-item" data-full="assets/images/Goren_naves_1.webp"
-              aria-label="Горен навес — изглед 1">
-              <img src="assets/images/Goren_naves_1.webp" alt="Горен навес на ресторант Кошарите" width="600"
-                height="400" loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item wide" data-full="assets/images/Goren_naves_3.webp"
-              aria-label="Горен навес — изглед 2">
-              <img src="assets/images/Goren_naves_3.webp" alt="Широк изглед към горния навес в Кошарите" width="1200"
-                height="400" loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item tall" data-full="assets/images/Bar.webp" aria-label="Барът">
-              <img src="assets/images/Bar.webp" alt="Барът на ресторант Кошарите" width="600" height="800"
-                loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item" data-full="assets/images/Gledka.webp" aria-label="Изглед към природата">
-              <img src="assets/images/Gledka.webp" alt="Изглед към природата на парк Кайлъка от Кошарите" width="600"
-                height="400" loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item" data-full="assets/images/Dancing_0.webp" aria-label="Жива музика и танци">
-              <img src="assets/images/Dancing_0.webp" alt="Жива музика и танци в ресторант Кошарите" width="600"
-                height="400" loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item tall" data-full="assets/images/Goren_naves_ukrasa_1.webp"
-              aria-label="Украса на навеса">
-              <img src="assets/images/Goren_naves_ukrasa_1.webp" alt="Декорация на горния навес за събитие в Кошарите"
-                width="600" height="800" loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item tall" data-full="assets/images/Dancing_3.webp" aria-label="Вечер с жива музика">
-              <img src="assets/images/Dancing_3.webp" alt="Вечер с жива музика в Кошарите" width="600" height="800"
-                loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item" data-full="assets/images/Goren_naves_ukrasa_2.webp"
-              aria-label="Украса на навеса 2">
-              <img src="assets/images/Goren_naves_ukrasa_2.webp" alt="Украса и атмосфера в ресторант Кошарите"
-                width="600" height="400" loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item" data-full="assets/images/Goren_naves_ukrasa_3.webp"
-              aria-label="Украса на навеса 3">
-              <img src="assets/images/Goren_naves_ukrasa_3.webp" alt="Празнична украса в Кошарите" width="600"
-                height="400" loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item" data-full="assets/images/Dancing_4.webp" aria-label="Танци и музика">
-              <img src="assets/images/Dancing_4.webp" alt="Танци и забавления в ресторант Кошарите" width="600"
-                height="400" loading="lazy" decoding="async">
-            </button>
-            <button class="gallery-item wide" data-full="assets/images/Dancing_1.webp"
-              aria-label="Жива музика — панорама">
-              <img src="assets/images/Dancing_1.webp" alt="Панорама на вечерта с жива музика в Кошарите" width="1200"
-                height="400" loading="lazy" decoding="async">
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
-        <div class="container">
-          <div class="contact-grid">
-            <div>
-              <p class="section-kicker">Локация и контакти</p>
-              <h2 id="contact-heading">Намери ни лесно</h2>
-              <address class="contact-card">
-                <p><strong>Телефон:</strong> <a href="tel:+359879310121">+359 879 31 01 21</a></p>
-                <p><strong>Адрес:</strong> <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=43.38094844,24.63129496" target="_blank"
-                    rel="noopener">Плевен, парк „Кайлъка"</a></p>
-                <p><strong>Работно време:</strong><br>
-                  Понеделник – Петък: 16:00 – 00:00<br>
-                  Събота – Неделя: 12:00 – 00:00
-                </p>
-                <a class="btn btn-secondary btn-directions"
-                  href="https://www.google.com/maps/dir/?api=1&destination=43.38094844,24.63129496" target="_blank"
-                  rel="noopener" aria-label="Отвори упътвания до Ресторант Кошарите в Google Maps">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true" focusable="false">
-                    <polygon points="3 11 22 2 13 21 11 13 3 11" />
-                  </svg>
-                  Упътване с Google Maps
-                </a>
-              </address>
+          <div class="reviews-summary">
+            <div class="rating-score">4.8</div>
+            <div class="rating-details">
+              <div class="stars">★★★★★</div>
+              <p>Средна оценка от нашите гости</p>
             </div>
-            <div class="map-wrap">
-              <div id="map" role="application"
-                aria-label="Карта с местоположението на ресторант Кошарите в парк Кайлъка, Плевен"></div>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p>
+                Прекрасна атмосфера сред природата, вкусна храна и отлично
+                обслужване. Определено ще посетим отново.
+              </p>
+              <span class="review-author">— Мария П.</span>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p>
+                Едно от най-хубавите места в Кайлъка. Скарата беше страхотна, а
+                персоналът изключително любезен.
+              </p>
+              <span class="review-author">— Иван К.</span>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p>
+                Просторно, уютно и чудесно за семейни празници. Организацията
+                беше на високо ниво.
+              </p>
+              <span class="review-author">— Десислава Н.</span>
+            </article>
+          </div>
+
+          <div class="reviews-cta">
+            <a
+              href="https://www.google.com/search?q=Ресторант+Кошарите+Плевен"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-secondary"
+            >
+              Виж всички отзиви
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <span class="brand-name footer-brand">КОШАРИТЕ</span>
+            <p>
+              © <span id="footer-year"></span> Ресторант Кошарите. Всички права
+              запазени.
+            </p>
+          </div>
+          <div>
+            <div class="footer-links">
+              <a href="pages/terms.html">Общи условия</a>
+              <a href="pages/cookie-policy.html">Бисквитки</a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <span class="brand-name footer-brand">КОШАРИТЕ</span>
-          <p>© <span id="footer-year"></span> Ресторант Кошарите. Всички права запазени.</p>
-        </div>
-        <div>
-          <div class="footer-links">
-            <a href="pages/terms.html">Общи условия</a>
-            <a href="pages/cookie-policy.html">Бисквитки</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <dialog class="lightbox" id="lightbox" aria-modal="true" aria-label="Преглед на снимка от галерията">
-    <div class="lb-stage">
-      <button id="lb-prev" class="lb-btn" aria-label="Предишна снимка">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <polyline points="15 18 9 12 15 6" />
-        </svg>
-      </button>
-      <div class="lb-image-wrap">
-        <img id="lb-img" src="" alt="">
-      </div>
-      <button id="lb-next" class="lb-btn" aria-label="Следваща снимка">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <polyline points="9 18 15 12 9 6" />
-        </svg>
-      </button>
+      </footer>
     </div>
-    <button id="lb-close" aria-label="Затвори преглед на снимката">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <line x1="18" y1="6" x2="6" y2="18" />
-        <line x1="6" y1="6" x2="18" y2="18" />
+
+    <dialog
+      class="lightbox"
+      id="lightbox"
+      aria-modal="true"
+      aria-label="Преглед на снимка от галерията"
+    >
+      <div class="lb-stage">
+        <button id="lb-prev" class="lb-btn" aria-label="Предишна снимка">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <div class="lb-image-wrap">
+          <img id="lb-img" alt="" />
+        </div>
+        <button id="lb-next" class="lb-btn" aria-label="Следваща снимка">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      </div>
+      <button id="lb-close" aria-label="Затвори преглед на снимката">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+        Затвори
+      </button>
+      <div
+        class="lb-counter"
+        id="lb-counter"
+        role="group"
+        aria-label="Навигация между снимките"
+      ></div>
+    </dialog>
+
+    <button
+      class="btn-cookies-float"
+      onclick="CookieConsent.showPreferences()"
+      aria-label="Настройки за бисквитки"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5" />
+        <path d="M8.5 8.5v.01M16 15.5v.01M12 12v.01" />
       </svg>
-      Затвори
     </button>
-    <div class="lb-counter" id="lb-counter" role="group" aria-label="Навигация между снимките"></div>
-  </dialog>
 
-  <button class="btn-cookies-float" onclick="CookieConsent.showPreferences()" aria-label="Настройки за бисквитки">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-      <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5" />
-      <path d="M8.5 8.5v.01M16 15.5v.01M12 12v.01" />
-    </svg>
-  </button>
+    <script type="module">
+      import "https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js";
 
-  <script type="module">
-    import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js';
-
-    CookieConsent.run({
-      categories: {
-        necessary: { enabled: true, readOnly: true },
-        analytics: {}
-      },
-      language: {
-        default: 'bg',
-        translations: {
-          bg: {
-            consentModal: {
-              title: 'Използваме бисквитки',
-              description: 'Използваме аналитични бисквитки, за да разберем как посетителите използват сайта ни.',
-              acceptAllBtn: 'Приемам всички',
-              acceptNecessaryBtn: 'Само необходимите',
-              showPreferencesBtn: 'Настройки'
+      CookieConsent.run({
+        categories: {
+          necessary: { enabled: true, readOnly: true },
+          analytics: {},
+        },
+        language: {
+          default: "bg",
+          translations: {
+            bg: {
+              consentModal: {
+                title: "Използваме бисквитки",
+                description:
+                  "Използваме аналитични бисквитки, за да разберем как посетителите използват сайта ни.",
+                acceptAllBtn: "Приемам всички",
+                acceptNecessaryBtn: "Само необходимите",
+                showPreferencesBtn: "Настройки",
+              },
+              preferencesModal: {
+                title: "Настройки за бисквитки",
+                acceptAllBtn: "Приемам всички",
+                acceptNecessaryBtn: "Само необходимите",
+                savePreferencesBtn: "Запази",
+                sections: [
+                  {
+                    title: "Необходими",
+                    description:
+                      "Тези бисквитки са задължителни за работата на сайта.",
+                    linkedCategory: "necessary",
+                  },
+                  {
+                    title: "Аналитични (Google Analytics)",
+                    description:
+                      "Помагат ни да разберем как се използва сайтът.",
+                    linkedCategory: "analytics",
+                  },
+                ],
+              },
             },
-            preferencesModal: {
-              title: 'Настройки за бисквитки',
-              acceptAllBtn: 'Приемам всички',
-              acceptNecessaryBtn: 'Само необходимите',
-              savePreferencesBtn: 'Запази',
-              sections: [
-                {
-                  title: 'Необходими',
-                  description: 'Тези бисквитки са задължителни за работата на сайта.',
-                  linkedCategory: 'necessary'
-                },
-                {
-                  title: 'Аналитични (Google Analytics)',
-                  description: 'Помагат ни да разберем как се използва сайтът.',
-                  linkedCategory: 'analytics'
-                }
-              ]
-            }
+          },
+        },
+        onConsent: function () {
+          if (CookieConsent.acceptedCategory("analytics")) {
+            loadGtag();
+            gtag("consent", "update", { analytics_storage: "granted" });
           }
+        },
+      });
+    </script>
+
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+
+      (function () {
+        var mapEl = document.getElementById("map");
+        if (!mapEl) return;
+
+        var leafletLoaded = false;
+
+        function loadLeaflet() {
+          if (leafletLoaded) return;
+          leafletLoaded = true;
+
+          var script = document.createElement("script");
+          script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+          script.onload = function () {
+            initMap();
+          };
+          document.head.appendChild(script);
         }
-      },
-      onConsent: function () {
-        if (CookieConsent.acceptedCategory('analytics')) {
-          loadGtag();
-          gtag('consent', 'update', { analytics_storage: 'granted' });
-        }
-      }
-    });
-  </script>
 
-  <script>
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-    (function () {
-      var mapEl = document.getElementById('map');
-      if (!mapEl) return;
-
-      var leafletLoaded = false;
-
-      function loadLeaflet() {
-        if (leafletLoaded) return;
-        leafletLoaded = true;
-
-        var script = document.createElement('script');
-        script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-        script.onload = function () {
-          initMap();
-        };
-        document.head.appendChild(script);
-      }
-
-      function initMap() {
-        var customIcon = L.divIcon({
-          className: 'custom-pin',
-          html: `
+        function initMap() {
+          var customIcon = L.divIcon({
+            className: "custom-pin",
+            html: `
                 <div class="pin-wrapper">
                   <img src="assets/icons/map-marker.png" class="pin-icon" alt="">
                   <div class="pin-tip"></div>
-                </div>`, iconSize: [40, 40],
-          iconAnchor: [20, 40],
-          popupAnchor: [0, -40]
-        });
+                </div>`,
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+            popupAnchor: [0, -40],
+          });
 
-        var map = L.map('map').setView([43.38284844, 24.63029496], 16);
-        L.tileLayer('https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.webp?key=D0JSok60mwH7fw0T16Hw', {
-          attribution:
-            '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +
-            '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-        }).addTo(map);
-        L.marker([43.38104844, 24.63135496], { icon: customIcon }).addTo(map);
-      }
+          var map = L.map("map").setView([43.38284844, 24.63029496], 16);
+          L.tileLayer(
+            "https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.webp?key=D0JSok60mwH7fw0T16Hw",
+            {
+              attribution:
+                '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +
+                '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+            },
+          ).addTo(map);
+          L.marker([43.38104844, 24.63135496], { icon: customIcon }).addTo(map);
+        }
 
-      if ('IntersectionObserver' in window) {
-        var observer = new IntersectionObserver(function (entries) {
-          if (entries[0].isIntersecting) {
-            loadLeaflet();
-            observer.disconnect();
-          }
-        }, { rootMargin: '200px' });
-        observer.observe(mapEl);
-      } else {
-        loadLeaflet();
-      }
-    })();
-  </script>
+        if ("IntersectionObserver" in window) {
+          var observer = new IntersectionObserver(
+            function (entries) {
+              if (entries[0].isIntersecting) {
+                loadLeaflet();
+                observer.disconnect();
+              }
+            },
+            { rootMargin: "200px" },
+          );
+          observer.observe(mapEl);
+        } else {
+          loadLeaflet();
+        }
+      })();
+    </script>
 
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
